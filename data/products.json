@@ -1,0 +1,263 @@
+[
+  {
+    "id": 1,
+    "title": "Auriculares Bluetooth",
+    "description": "Auriculares inalámbricos con cancelación de ruido",
+    "code": "AUR123",
+    "price": 4500,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónica",
+    "thumbnails": [
+      "images/auriculares1.png",
+      "images/auriculares2.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mouse Gamer RGB",
+    "description": "Mouse con 6 botones y luces LED RGB",
+    "code": "MOU456",
+    "price": 3200,
+    "status": true,
+    "stock": 40,
+    "category": "Periféricos",
+    "thumbnails": [
+      "images/mouse1.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Teclado Mecánico",
+    "description": "Teclado con switches rojos y retroiluminación",
+    "code": "TEC789",
+    "price": 7500,
+    "status": true,
+    "stock": 15,
+    "category": "Periféricos",
+    "thumbnails": [
+      "images/teclado1.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Monitor 24''",
+    "description": "Monitor LED Full HD 1920x1080",
+    "code": "MON001",
+    "price": 30000,
+    "status": true,
+    "stock": 10,
+    "category": "Pantallas",
+    "thumbnails": [
+      "images/monitor1.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Silla Gamer",
+    "description": "Silla ergonómica con apoyabrazos ajustables",
+    "code": "SIL002",
+    "price": 50000,
+    "status": true,
+    "stock": 5,
+    "category": "Muebles",
+    "thumbnails": [
+      "images/silla1.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Webcam HD",
+    "description": "Cámara web 720p con micrófono incorporado",
+    "code": "WEB003",
+    "price": 6000,
+    "status": true,
+    "stock": 30,
+    "category": "Accesorios",
+    "thumbnails": [
+      "images/webcam1.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Notebook i5 8GB",
+    "description": "Notebook con procesador i5, 8GB RAM y SSD 256GB",
+    "code": "NOT004",
+    "price": 200000,
+    "status": true,
+    "stock": 8,
+    "category": "Computadoras",
+    "thumbnails": [
+      "images/notebook1.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Disco SSD 1TB",
+    "description": "Unidad de estado sólido de 1TB NVMe",
+    "code": "SSD005",
+    "price": 38000,
+    "status": true,
+    "stock": 20,
+    "category": "Almacenamiento",
+    "thumbnails": [
+      "images/ssd1.png"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Impresora Multifunción",
+    "description": "Impresora con escáner y wifi",
+    "code": "IMP006",
+    "price": 45000,
+    "status": true,
+    "stock": 6,
+    "category": "Oficina",
+    "thumbnails": [
+      "images/impresora1.png"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Router Wi-Fi 6",
+    "description": "Router doble banda con tecnología Wi-Fi 6",
+    "code": "ROU007",
+    "price": 22000,
+    "status": true,
+    "stock": 12,
+    "category": "Redes",
+    "thumbnails": [
+      "images/router1.png"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Cargador USB-C",
+    "description": "Cargador rápido 65W con puerto USB-C",
+    "code": "CAR008",
+    "price": 5500,
+    "status": true,
+    "stock": 50,
+    "category": "Accesorios",
+    "thumbnails": [
+      "images/cargador1.png"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Tablet 10''",
+    "description": "Pantalla HD, 4GB RAM, 64GB almacenamiento",
+    "code": "TAB009",
+    "price": 75000,
+    "status": true,
+    "stock": 9,
+    "category": "Dispositivos Móviles",
+    "thumbnails": [
+      "images/tablet1.png"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Parlante Bluetooth",
+    "description": "Portátil, resistente al agua, batería de 10h",
+    "code": "PAR010",
+    "price": 16000,
+    "status": true,
+    "stock": 22,
+    "category": "Audio",
+    "thumbnails": [
+      "images/parlante1.png"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Smartwatch Deportivo",
+    "description": "Monitorea ritmo cardíaco, pasos y sueño",
+    "code": "SMA011",
+    "price": 18000,
+    "status": true,
+    "stock": 17,
+    "category": "Wearables",
+    "thumbnails": [
+      "images/smartwatch1.png"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Cámara de Seguridad Wi-Fi",
+    "description": "HD 1080p, visión nocturna, detección de movimiento",
+    "code": "CAM012",
+    "price": 25000,
+    "status": true,
+    "stock": 14,
+    "category": "Seguridad",
+    "thumbnails": [
+      "images/camara1.png"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Lámpara LED Escritorio",
+    "description": "Brillo regulable y carga inalámbrica",
+    "code": "LAM013",
+    "price": 8900,
+    "status": true,
+    "stock": 18,
+    "category": "Iluminación",
+    "thumbnails": [
+      "images/lampara1.png"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Joystick para PC",
+    "description": "Compatible con Windows, vibración dual",
+    "code": "JOY014",
+    "price": 10000,
+    "status": true,
+    "stock": 27,
+    "category": "Gaming",
+    "thumbnails": [
+      "images/joystick1.png"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Disco Externo 2TB",
+    "description": "USB 3.0, carcasa metálica",
+    "code": "DIS015",
+    "price": 42000,
+    "status": true,
+    "stock": 11,
+    "category": "Almacenamiento",
+    "thumbnails": [
+      "images/discoexterno1.png"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Kit Herramientas PC",
+    "description": "Incluye destornilladores, pinzas y cepillo",
+    "code": "KIT016",
+    "price": 7800,
+    "status": true,
+    "stock": 33,
+    "category": "Mantenimiento",
+    "thumbnails": [
+      "images/kit1.png"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Adaptador HDMI a VGA",
+    "description": "Compatible con audio, incluye cable",
+    "code": "ADA017",
+    "price": 3000,
+    "status": true,
+    "stock": 45,
+    "category": "Accesorios",
+    "thumbnails": [
+      "images/adapter1.png"
+    ]
+  }
+]
