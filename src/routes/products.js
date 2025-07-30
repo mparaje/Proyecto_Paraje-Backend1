@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ProductManager from '../models/ProductManager.js';
+import ProductManager from '../../models/ProductManager.js';
 
 const router = Router();
 const productManager = new ProductManager('./data/products.json');
@@ -26,7 +26,7 @@ router.put('/:pid', async (req, res) => {
     const { pid } = req.params;
     const updateData = req.body;
     try {
-        const updatedProduct = await productManager.updateProduct(Number(pid), updateData); // <--- AWAIT + convertir ID
+        const updatedProduct = await productManager.updateProduct(Number(pid), updateData);
         res.json(updatedProduct);
     } catch (err) {
         res.status(404).json({ error: err.message });
@@ -36,11 +36,13 @@ router.put('/:pid', async (req, res) => {
 router.delete('/:pid', async (req, res) => {
     const { pid } = req.params;
     try {
-        const result = await productManager.deleteProduct(Number(pid)); // <--- AWAIT + convertir ID
+        const result = await productManager.deleteProduct(Number(pid));
         res.json(result);
     } catch (err) {
         res.status(404).json({ error: err.message });
     }
 });
+
+export { productManager };
 
 export default router;

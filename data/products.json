@@ -1,45 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Auriculares Bluetooth",
-    "description": "Auriculares inalámbricos con cancelación de ruido",
-    "code": "AUR123",
-    "price": 4500,
-    "status": true,
-    "stock": 25,
-    "category": "Electrónica",
-    "thumbnails": [
-      "images/auriculares1.png",
-      "images/auriculares2.png"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Mouse Gamer RGB",
-    "description": "Mouse con 6 botones y luces LED RGB",
-    "code": "MOU456",
-    "price": 3200,
-    "status": true,
-    "stock": 40,
-    "category": "Periféricos",
-    "thumbnails": [
-      "images/mouse1.png"
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Teclado Mecánico",
-    "description": "Teclado con switches rojos y retroiluminación",
-    "code": "TEC789",
-    "price": 7500,
-    "status": true,
-    "stock": 15,
-    "category": "Periféricos",
-    "thumbnails": [
-      "images/teclado1.png"
-    ]
-  },
-  {
     "id": 4,
     "title": "Monitor 24''",
     "description": "Monitor LED Full HD 1920x1080",
@@ -258,6 +218,19 @@
     "category": "Accesorios",
     "thumbnails": [
       "images/adapter1.png"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "gdfv",
+    "description": "fdve",
+    "code": "erverv",
+    "price": 30,
+    "stock": 3,
+    "category": "electro",
+    "status": true,
+    "thumbnails": [
+      "fvfv.com"
     ]
   }
 ]

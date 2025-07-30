@@ -1,0 +1,26 @@
+<h1>Productos en Tiempo Real</h1>
+
+<h2>Agregar Producto</h2>
+<form id="addProductForm">
+  <input class="addDetProductFormInput" type="text" name="title" placeholder="Título" required>
+  <input class="addDetProductFormInput" type="text" name="description" placeholder="Descripción" required>
+  <input class="addDetProductFormInput" type="text" name="code" placeholder="Código" required>
+  <input class="addDetProductFormInput" type="number" name="price" placeholder="Precio" required>
+  <input class="addDetProductFormInput" type="text" name="thumbnail" placeholder="URL Imagen" required>
+  <input class="addDetProductFormInput" type="number" name="stock" placeholder="Stock" required>
+  <input class="addDetProductFormInput" type="text" name="category" placeholder="Categoría" required>
+  <button class = "styleButton" type="submit">Agregar</button>
+</form>
+
+<h2>Eliminar Producto</h2>
+<form id="deleteProductForm">
+  <input class="addDetProductFormInput" type="number" name="id" placeholder="ID del producto a eliminar" required>
+  <button class="styleButton" type="submit">Eliminar</button>
+</form>
+
+<h2>Lista de Productos</h2>
+<ul id="productList">
+  {{#each products}}
+    <li><strong>{{title}}</strong> - ${{price}}</li>
+  {{/each}}
+</ul>

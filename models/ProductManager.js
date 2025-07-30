@@ -10,7 +10,7 @@ export default class ProductManager {
       const data = await fs.readFile(this.path, 'utf-8');
       return JSON.parse(data);
     } catch (err) {
-      return ["Error al leer el archivo"];
+      return [];
     }
   }
 
