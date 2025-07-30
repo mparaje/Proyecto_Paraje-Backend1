@@ -1,7 +1,5 @@
 const socket = io();
 
-console.log("JS conectado")
-
 document.getElementById('addProductForm').addEventListener('submit', e =>{
     e.preventDefault();
 

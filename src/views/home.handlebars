@@ -1,6 +1,6 @@
 <h1>Lista de Productos</h1>
-<ul>
+<ul class = "productListHome">
   {{#each products}}
-    <li><strong>{{title}}</strong> - ${{price}}</li>
+    <li class="productHome"><strong class = "productLetter">{{id}}. {{title}}</strong> - ${{price}}</li>
   {{/each}}
 </ul>

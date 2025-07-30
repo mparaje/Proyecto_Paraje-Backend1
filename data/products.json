@@ -1,31 +1,5 @@
 [
   {
-    "id": 4,
-    "title": "Monitor 24''",
-    "description": "Monitor LED Full HD 1920x1080",
-    "code": "MON001",
-    "price": 30000,
-    "status": true,
-    "stock": 10,
-    "category": "Pantallas",
-    "thumbnails": [
-      "images/monitor1.png"
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Silla Gamer",
-    "description": "Silla ergonómica con apoyabrazos ajustables",
-    "code": "SIL002",
-    "price": 50000,
-    "status": true,
-    "stock": 5,
-    "category": "Muebles",
-    "thumbnails": [
-      "images/silla1.png"
-    ]
-  },
-  {
     "id": 6,
     "title": "Webcam HD",
     "description": "Cámara web 720p con micrófono incorporado",
@@ -88,19 +62,6 @@
     "category": "Redes",
     "thumbnails": [
       "images/router1.png"
-    ]
-  },
-  {
-    "id": 11,
-    "title": "Cargador USB-C",
-    "description": "Cargador rápido 65W con puerto USB-C",
-    "code": "CAR008",
-    "price": 5500,
-    "status": true,
-    "stock": 50,
-    "category": "Accesorios",
-    "thumbnails": [
-      "images/cargador1.png"
     ]
   },
   {
@@ -218,19 +179,6 @@
     "category": "Accesorios",
     "thumbnails": [
       "images/adapter1.png"
-    ]
-  },
-  {
-    "id": 21,
-    "title": "gdfv",
-    "description": "fdve",
-    "code": "erverv",
-    "price": 30,
-    "stock": 3,
-    "category": "electro",
-    "status": true,
-    "thumbnails": [
-      "fvfv.com"
     ]
   }
 ]
