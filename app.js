@@ -1,11 +1,23 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import handlebars from 'express-handlebars';
-import productsRouter, { productManager } from './src/routes/products.js';
-import cartsRouter from './src/routes/carts.js'
+import productsRouter from './src/routes/products.router.js';
+import cartsRouter from './src/routes/carts.router.js'
+import userRouter from './src/routes/users.router.js'
 import { Server } from 'socket.io';
+import { productModel } from './models/product.model.js';
+import { userModel } from './models/user.model.js';
 
 const PORT = 8080;
 const app = express();
+
+mongoose.connect('mongodb+srv://maiaparaje:Paraje25@ecommerce.nfhlwez.mongodb.net/myEcommerce')
+.then(()=>{
+  console.log("Conectado a mongoDB correctamente")
+})
+.catch(err => {
+  console.log(`No pudimos conectarnos a mongoDB. Error: ${err}`)
+})
 
 app.use(express.json());
 app.use((err, req, res, next) => {
@@ -14,6 +26,7 @@ app.use((err, req, res, next) => {
   }
   next();
 });
+
 app.use(express.urlencoded({extended : true}))
 app.use(express.static('src/public'))
 
@@ -22,36 +35,39 @@ app.set('view engine', 'handlebars')
 app.set('views', './src/views')
 
 app.use('/api/products', productsRouter);
+app.use('/products', productsRouter); 
 app.use('/api/carts', cartsRouter);
+app.use('/api/users', userRouter);
 
 app.get('/', async (req, res) => {
-  const products = await productManager.getProducts();
-  res.render('home', { products });
+  const products = await productModel.find().lean();
+  const user = await userModel.findOne().populate("cart").lean();
+  res.render('home', { products, cartId: user?.cart?._id  });
 });
 
 app.get('/realtimeproducts', async (req, res) => {
-  const products = await productManager.getProducts();
+  const products = await productModel.find().lean();
   res.render('realTimeProducts', { products });
 });
 
 const httpServer = app.listen(PORT, () => {
-  console.log(`✅ Servidor escuchando en puerto ${PORT}`);
+  console.log(`Servidor escuchando en puerto ${PORT}`);
 });
 
 const io = new Server(httpServer);
 
 io.on('connection', socket => {
-  console.log('🟢 Cliente conectado por WebSocket');
+  console.log('Cliente conectado por WebSocket');
 
-  socket.on('new-product', async product => {
-    await productManager.addProduct(product);
-    const updatedProducts = await productManager.getProducts();
+  socket.on('new-product', async productData => {
+    await productModel.create(productData);
+    const updatedProducts = await productModel.find().lean();
     io.emit('products-updated', updatedProducts);
   });
 
   socket.on('delete-product', async id => {
-    await productManager.deleteProduct(Number(id));
-    const updatedProducts = await productManager.getProducts();
+    await productModel.findByIdAndDelete(id);
+    const updatedProducts = await productModel.find().lean();
     io.emit('products-updated', updatedProducts);
   });
 });

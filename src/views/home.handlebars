@@ -1,6 +1,24 @@
 <h1>Lista de Productos</h1>
-<ul class = "productListHome">
+
+<ul>
   {{#each products}}
-    <li class="productHome"><strong class = "productLetter">{{id}}. {{title}}</strong> - ${{price}}</li>
+    <li>
+      <strong>{{this.title}}</strong> - ${{this.price}}  
+      <a href="/products/{{this._id}}">Ver detalle</a>
+      <form method="POST" action="/api/carts/{{../cartId}}/products/{{this._id}}" style="display:inline">
+        <input type="hidden" name="quantity" value="1">
+        <button type="submit">Agregar al carrito</button>
+      </form>
+    </li>
   {{/each}}
 </ul>
+
+<div class="pagination">
+  {{#if hasPrevPage}}
+    <a href="{{prevLink}}">Anterior</a>
+  {{/if}}
+  Página {{page}} de {{totalPages}}
+  {{#if hasNextPage}}
+    <a href="{{nextLink}}">Siguiente</a>
+  {{/if}}
+</div>

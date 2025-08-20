@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^5.1.0",
     "express-handlebars": "^8.0.1",
+    "mongoose": "^8.17.2",
     "socket.io": "^4.8.1"
   }
 }
